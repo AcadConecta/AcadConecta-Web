@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class LoginController {
     @GetMapping("/index")
     public String home() {
-        return "index"; // Retorna o nome do arquivo HTML (index.html) que estará na pasta templates
+        return "index";
     }
 }
 
