@@ -1,6 +1,7 @@
 package code.acadConecta.service.data;
 
 import code.acadConecta.model.entities.User;
+import code.acadConecta.model.util.HashItem;
 import code.acadConecta.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
@@ -23,7 +24,7 @@ public class DataBaseSecurityService implements UserDetailsService {
     @Override
     public UserDetails loadUserByUsername(String username) {
         try {
-            User user = userService.findById(username);
+            User user = userService.findById(HashItem.defineHash(username));
 
             Set<GrantedAuthority> authoritySet = new HashSet<>();
 
