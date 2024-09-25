@@ -13,7 +13,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.List;
 import java.util.Optional;
@@ -32,8 +31,6 @@ public class MessageController {
 
     @GetMapping("/showAllByChannel/{chanelNumber}")
     public String showMessage(Model model, @PathVariable Long chanelNumber) {
-        System.out.println("VARIAVEL DO CANAL ====" + chanelNumber);
-
         List<Message> messages = messageRepository.findByIdChanel(chanelService.findById(chanelNumber));
 
         model.addAttribute("messages", messages);
