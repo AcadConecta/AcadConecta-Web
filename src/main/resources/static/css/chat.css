@@ -5,6 +5,10 @@
     font-family: Arial, sans-serif;
 }
 
+.message-style {
+    margin: 20px 0 20px 0;
+}
+
 body {
     display: flex;
     justify-content: center;

@@ -29,7 +29,7 @@ public class SecurityConfig {
                 )
                 .formLogin(form -> form
                         .loginPage("/login").permitAll()
-                        .defaultSuccessUrl("/teste")
+                        .defaultSuccessUrl("/chat")
                 )
                 .logout(logout -> logout.permitAll());
 

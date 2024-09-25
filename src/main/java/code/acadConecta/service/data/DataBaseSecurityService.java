@@ -36,7 +36,7 @@ public class DataBaseSecurityService implements UserDetailsService {
             return new org.springframework.security.core.userdetails.User(user.getEmail(), user.getPassword(), authoritySet);
 
         } catch (UsernameNotFoundException error) {
-            System.out.println("Error in load user by name of database: " + error.getMessage());
+            System.out.println("Error in loadChat user by name of database: " + error.getMessage());
         }
 
         return null;
