@@ -1,0 +1,93 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #FFFFFF;
+}
+.profileTitle{
+    margin-top: 20px;
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35px;
+    padding: 20px;
+    background-color: #F2F2F2;
+    width: 400px;
+    height: 480px;
+    margin-bottom: 80px;
+}
+.userInfo{
+    display: flex; flex-direction: column; align-items: center;
+    padding: 20px;
+}
+.img{
+    width: 10px;
+    height: 10px;
+    margin-top: 20px;
+    margin-right: 55px;
+}
+.username{
+    display: flex;
+    width: 193px;
+    height: 33px;
+    margin-top: 65px;
+    align-items: center;
+    flex-direction: column;
+}
+#labelNome{
+    /* margin-left: 37px; */
+    margin-top: 8px;
+}
+
+.infoEmail{
+    display: flex;
+    margin-top: 40px;
+    margin-right: 60px;
+    flex-direction: column;
+    align-items: left;
+}
+#emailUser{
+    display: flex;
+    background-color: white;
+    width: 300px;
+    margin-top: 5px;
+    height: 25px;
+    align-items: center;
+}
+#labelEmail{
+    margin-left: 8px;
+}
+.buttons{
+    display: flex;
+    margin-top: 50px;
+    align-items: left;
+    flex-direction: column;
+    width: 370px;
+}
+#ExitButtons{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 75px;
+    margin-top: 50px;
+}
+#delete{
+    margin-right: 50px;
+    width: 80px;
+    height: 30px;
+    background-color: #9C4949;
+    color:#FFFFFF;
+    border:none;
+    border-radius: 3px;
+}
+#exit{
+    width: 80px;
+    height: 30px;
+    background-color: #202020;
+    color:white;
+    border:none;
+    border-radius:3px;
+}

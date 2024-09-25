@@ -61,7 +61,8 @@ body {
 }
 
 .input-group {
-    margin-bottom: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     text-align: left;
 }
 
@@ -94,7 +95,9 @@ button {
 button:hover {
     background-color: #0000cc;
 }
-
+h2{
+    margin:-30px;
+}
 p {
     margin-top: 50px;
 }

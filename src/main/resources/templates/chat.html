@@ -4,98 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Incluindo jQuery -->
-    <link rel="stylesheet" href="/css/chat.css">
+    <link rel="stylesheet" href="/src/main/resources/static/css/chat.css">
     <title>Chat</title>
 </head>
 <body>
-    <div class="container">
-        <aside class="sidebar">
-            <div class="logo">
-                <img src="/images/acadconectasmall.png" alt="logo com o nome acadconecta e um capelo acima da palavra conecta">
-            </div>
-                <nav class="menu">
-                    <ul>
-                        <li class="title-menu"><a href="#">Canais</a></li>
-                        <li><a href="" onclick="event.preventDefault(); carregarConteudo('/editais'); loadMessages(1)" id="editalButton">Editais do campus</a></li>
-                        <li><a href="" onclick="event.preventDefault(); carregarConteudo('/vagas'); loadMessages(2)">Emprego e estágio</a></li>
-                        <li><a href="" onclick="event.preventDefault(); carregarConteudo('/chatCha'); loadMessages(3)">Chat</a></li>
-                        <li class="title-menu"><a href="#">Perfil</a></li>
-                    </ul>
-                </nav>
-            </aside>
-            
-            <main id="mainContent" class="chat-container">
-                <header class="chat-header">
-                    <h2 >CHAT</h2>
-                </header>
-<<<<<<< HEAD
-    
-                <div class="chat-box">
-                    <div>
-                        <div class="message-icons">
-                            <img src="/src/main/resources/static/images/acadaconectalarge.png" alt="" id="logo-teste">
-                            <span class="username">Isis</span>
-                        </div>
-                        
-                        <div class="message">
-                            <div class="message-header">
-                                <span class="timestamp">29/08/2024</span>
-                                <span class="timestamp">15:30</span>
-                            </div>
-                            <p>Vaga de estágio em Data Science na Isis</p>
-                        </div>
+<div class="container">
+    <aside class="sidebar">
+        <div class="logo">
+            <img src="/images/acadconectasmall.png" alt="logo com o nome acadconecta e um capelo acima da palavra conecta">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li class="title-menu"><a href="#">Canais</a></li>
+                <li ><a onclick="event.preventDefault(); carregarConteudo('/editais'); loadMessages(1)" id="editalButton">Editais do campus</a></li>
+                <li ><a onclick="event.preventDefault(); carregarConteudo('/vagas'); loadMessages(2)">Emprego e estágio</a></li>
+                <li ><a onclick="event.preventDefault(); carregarConteudo('/chatCha'); loadMessages(3)">Chat</a></li>
+                <li class="title-menu"><a href="#">Perfil</a></li>
+            </ul>
+        </nav>
+    </aside>
 
+    <main id="mainContent" class="chat-container">
+        <header class="chat-header">
+            <h2 >CHAT</h2>
+        </header>
 
-                        <div class="message-icons">
-                            <img src="/src/main/resources/static/images/acadaconectalarge.png" alt="" id="logo-teste">
-                            <span class="username">Isis</span>
-                        </div>
-                        
-                        <div class="message">
-                            <div class="message-header">
-                                <span class="timestamp">29/08/2024</span>
-                                <span class="timestamp">15:30</span>
-                            </div>
-                            <p>Vaga de estágio em Data Science na Isis</p>
-                        </div>
-
-                        <div class="message-icons">
-                            <img src="/src/main/resources/static/images/acadaconectalarge.png" alt="" id="logo-teste">
-                            <span class="username">Am3</span>
-                        </div>
-        
-                        <div class="message">
-                            <div class="message-header">
-                                <span class="timestamp">29/08/2024</span>
-                                <span class="timestamp">16:43</span>
-                            </div>
-                            <p>Gostaríamos de anunciar que as vagas foram preenchidas por Daniel, Cauê e Lariany</p>
-                        </div>
-
-=======
-
-                <div class="chat-box">
-                    <div>
-                        <div class="message-icons">
-                            <img src="/images/acadaconectalarge.png" alt="" id="logo-teste">
-                            <span class="username">Isis</span>
-                        </div>
-
-                        <div class="message">
-                            <div class="message-header">
-                                <span class="timestamp">29/08/2024</span>
-                                <span class="timestamp">15:30</span>
-                            </div>
-                            <p>Vaga de estágio em Data Science na Isis</p>
-                        </div>
->>>>>>> 9164a768ee483f0d22c34ef0ad56d3c6a80016ad
-                    </div>
-                   
+        <div class="chat-box">
+            <div>
+                <div class="message-icons">
+                    <img src="/images/acadaconectalarge.png" alt="" id="logo-teste">
+                    <span class="username">Isis</span>
                 </div>
 
-            </main>
+                <div class="message">
+                    <div class="message-header">
+                        <span class="timestamp">29/08/2024</span>
+                        <span class="timestamp">15:30</span>
+                    </div>
+                    <p>Vaga de estágio em Data Science na Isis</p>
+                </div>
+            </div>
         </div>
-    <script src="/scripts/generateContent.js"></script>
-    <script src="/scripts/loadMessages.js"></script>
-    </body>
+
+    </main>
+</div>
+<script src="/scripts/generateContent.js"></script>
+<script src="/scripts/loadMessages.js"></script>
+</body>
 </html>
