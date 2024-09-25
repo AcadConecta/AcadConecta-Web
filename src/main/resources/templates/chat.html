@@ -1,32 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/main/resources/static/css/chat.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Incluindo jQuery -->
+    <link rel="stylesheet" href="/css/chat.css">
     <title>Chat</title>
 </head>
 <body>
     <div class="container">
         <aside class="sidebar">
             <div class="logo">
-                <img src="/src/main/resources/static/images/acadconectasmall.png" alt="logo com o nome acadconecta e um capelo acima da palavra conecta">
+                <img src="/images/acadconectasmall.png" alt="logo com o nome acadconecta e um capelo acima da palavra conecta">
             </div>
                 <nav class="menu">
                     <ul>
                         <li class="title-menu"><a href="#">Canais</a></li>
-                        <li><a href="#">Editais do campus</a></li>
-                        <li><a href="#">Emprego e estágio</a></li>
-                        <li><a href="#">Chat</a></li>
+                        <li><a href="" onclick="event.preventDefault(); carregarConteudo('/editais'); loadMessages(1)" id="editalButton">Editais do campus</a></li>
+                        <li><a href="" onclick="event.preventDefault(); carregarConteudo('/vagas'); loadMessages(2)">Emprego e estágio</a></li>
+                        <li><a href="" onclick="event.preventDefault(); carregarConteudo('/chatCha'); loadMessages(3)">Chat</a></li>
                         <li class="title-menu"><a href="#">Perfil</a></li>
                     </ul>
                 </nav>
             </aside>
             
-            <main class="chat-container">
+            <main id="mainContent" class="chat-container">
                 <header class="chat-header">
-                    <h2>CHAT</h2>
+                    <h2 >CHAT</h2>
                 </header>
+<<<<<<< HEAD
     
                 <div class="chat-box">
                     <div>
@@ -70,20 +72,30 @@
                             <p>Gostaríamos de anunciar que as vagas foram preenchidas por Daniel, Cauê e Lariany</p>
                         </div>
 
+=======
+
+                <div class="chat-box">
+                    <div>
+                        <div class="message-icons">
+                            <img src="/images/acadaconectalarge.png" alt="" id="logo-teste">
+                            <span class="username">Isis</span>
+                        </div>
+
+                        <div class="message">
+                            <div class="message-header">
+                                <span class="timestamp">29/08/2024</span>
+                                <span class="timestamp">15:30</span>
+                            </div>
+                            <p>Vaga de estágio em Data Science na Isis</p>
+                        </div>
+>>>>>>> 9164a768ee483f0d22c34ef0ad56d3c6a80016ad
                     </div>
                    
                 </div>
-    
-                <div class="chat-input">
-                    <input type="text" placeholder="Escreva uma mensagem..." />
-                    <button class="send-btn">
-                        <img  class="logo-send" src="/src/main/resources/static/images/icon-send.png" alt="">
-                    </button>
-                </div>
+
             </main>
         </div>
+    <script src="/scripts/generateContent.js"></script>
+    <script src="/scripts/loadMessages.js"></script>
     </body>
-    </html>
-    </div>
-</body>
 </html>

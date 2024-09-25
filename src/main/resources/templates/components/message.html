@@ -1,0 +1,14 @@
+<div  th:each="message : ${messages}" class="message-style">
+  <div class="message-icons">
+    <img src="/images/icon_perfil_default_6212_web.png" alt="" id="logo-teste">
+    <span th:text="${message.getId_user().getName()}" class="username">Isis</span>
+  </div>
+
+  <div class="message">
+    <div class="message-header">
+      <span th:text="${message.date}" class="timestamp">29/08/2024</span>
+      <span th:text="${message.getHour()}" class="timestamp">15:30</span>
+    </div>
+    <p th:text="${message.getContent()}" >Vaga de estágio em Data Science na Isis</p>
+  </div>
+</div>
